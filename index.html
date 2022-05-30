@@ -3,55 +3,243 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The personal website for Tanner Watmough, highlighting his current experience, projects, and skills related to Software Development" />
+    <meta name="author" content="Tanner Watmough" />
+
     <title>Tanner Watmough | Computer Science Student</title>
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" />
   </head>
   <body>
     <header>
-      <a href="#about">About Me</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
+      <nav class="navbar">
+        <img src="images/tannerwatmough_profile.jpg" alt="Picture of Tanner Watmough"/>
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#about">About Me</a>
+          </li>
+          <li class="menu-item">
+            <a href="#education">Education</a>
+          </li>
+          <li class="menu-item">
+            <a href="#projects">Projects</a>
+            <ul class="sub-menu">
+              <li class="menu-item">
+                <a href="#resume-projects">Resume Projects</a>
+              </li>
+              <li class="menu-item">
+                <a href="#other-projects">Other Projects</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="#experience">Experience</a>
+          </li>
+          <li class="menu-item">
+            <a href="#skills">Skills</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section id="about">
-        <h1>Tanner Watmough</h1>
+        <h1>TANNER <span class="blue-title">WATMOUGH</span></h1>
         <h2>Computer Science Student</h2>
-        <p>Edmonton, Alberta <!-- Font Awesome of Canada --> <span>tannerwatmough@gmail.com</span></p>
-        <p>Personal summary goes here</p>
-        <a>Resume links as PDF</a>
-        <p>LinkedIn and GitHub links</p>
+        <p class="location">Edmonton, Alberta <i class="fa-brands fa-canadian-maple-leaf location"></i><span><a class="location blue-title" href="mailto:tannerwatmough@gmail.com"> tannerwatmough@gmail.com</a></span></p>
+        <p class="md-margin-vertical">I'm a second year Computer Science student enrolled at Thompson River University and Athabasca University. I love getting to create cool and interesting projects using nothing more than a computer.</p>
+        <a href="tanner_watmough-resume-2022.pdf" target="_blank" class="block">View Resume as PDF</a>
+        <a href="https://www.linkedin.com/in/tanner-watmough/" target="_blank"><i class="fa-brands fa-linkedin about-links"></i></a>
+        <a href="https://github.com/tannerwatmough" target="_blank"><i class="fa-brands fa-github about-links"></i></a>
       </section>
       <section id="education">
+        <h2>Education</h2>
+        <div class="card-container">
+          <div class="card in-progress">
+            <h3 class="degree"><i class="fa-regular fa-hourglass"></i> </i> Bachelor of Computing, Computer Science</h3>
+            <span>2022 - <strong>Current</strong></span>
+            <p class="university">Thompson Rivers University</p>
+            <p class="uni-details">GPA: 3.93/4.00</p>
+          </div>
+          <div class="card in-progress">
+            <h3 class="degree"><i class="fa-regular fa-hourglass"> </i> University Certificate, Computing and Information Systems</h3>
+            <span>2021 - <strong>Current</strong></span>
+            <p class="university">Athabasca University</p>
+            <p class="uni-details">GPA: 4.00/4.00</p>
+          </div>
+          <div class="card complete">
+            <h3 class="degree"><i class="fa-solid fa-check"></i> Bachelor of Science, Nursing</h3>
+            <span>2016 - 2020</span>
+            <p class="university">MacEwan University</p>
+            <p class="uni-details">GPA: 3.30/4.00</p>
+          </div>
+        </div>
       </section>
       <section id="projects">
         <h2>Projects</h2>
+        <!-- There should be a sorting function to sort difficulty, name, type, etc. Should be flex-box cards -->
+        <h3 id="resume-projects">Resume Projects</h3>
         <div class="card-container">
-          <!-- There should be a sorting function to sort difficulty, name, type, etc. Should be flex-box cards -->
-          <h3>Resume Projects</h3>
-          <div class="card">
-            <h2>App Title</h2>
-            <!-- Difficulty could be either a slider bar with green (easy), yellow (medium), red (hard) -->
-            <p>Difficulty goes here</p>
-            <p>App image goes here</p>
-            <p>App description</p>
-            <!-- Ideally this would be sort of like a Notion tag -->
+          <div class="card complete">
+            <h4>App Title</h4>
+            <!-- Ideally this would be sort of like a Notion tag.-->
             <p>Type (Tag): Mobile/Web/Desktop/Game</p>
-          </div>
-          <h3>Applications</h3>
-          <div class="card">
-            <h2>App Title</h2>
-            <p>Difficulty goes here</p>
-            <p>App image goes here</p>
+            <p>Skills Used: technologies</p>
+            <!-- Difficulty could be either a slider bar with green (easy), yellow (medium), red (hard) -->
+            <div class="difficulty-slider easy-difficulty"></div>
+            <div>
+              <a href="https://github.com/tannerwatmough" target="_blank"><i class="fa-brands fa-github brands"></i></a>
+              <!-- Steam/GitHub/YouTube/App Store Links-->
+              <a href="#" target="_blank"><i class="fa-solid fa-link brands"></i></a>
+            </div>
+            <a href="#"><img src="image/placeholder.jpg"></a>
             <p>App description</p>
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </div>
+          <div class="card complete">
+            <h4>App Title</h4>
+            <p>Type (Tag): Mobile/Web/Desktop/Game</p>
+            <p>Skills Used: technologies</p>
+            <div class="difficulty-slider easy-difficulty"></div>
+            <div>
+              <a href="https://github.com/tannerwatmough" target="_blank"><i class="fa-brands fa-github brands"></i></a>
+              <!-- Steam/GitHub/YouTube/App Store Links-->
+              <a href="#" target="_blank"><i class="fa-solid fa-link brands"></i></a>
+            </div>
+            <a href="#"><img src="image/placeholder.jpg"></a>
+            <p>App description</p>
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </div>
+          <div class="card complete">
+            <h4>App Title</h4>
+            <p>Type (Tag): Mobile/Web/Desktop/Game</p>
+            <p>Skills Used: technologies</p>
+            <div class="difficulty-slider easy-difficulty"></div>
+            <div>
+              <a href="https://github.com/tannerwatmough" target="_blank"><i class="fa-brands fa-github brands"></i></a>
+              <!-- Steam/GitHub/YouTube/App Store Links-->
+              <a href="#" target="_blank"><i class="fa-solid fa-link brands"></i></a>
+            </div>
+            <a href="#"><img src="image/placeholder.jpg"></a>
+            <p>App description</p>
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </div>
+        </div>
+        <h3 id="other-projects">Other Projects</h3>
+        <div class="card-container">
+          <div class="card in-progress">
+            <h4>App Title</h4>
+            <p>Type (Tag): Mobile/Web/Desktop/Game</p>
+            <p>Skills Used: technologies</p>
+            <div class="difficulty-slider easy-difficulty"></div>
+            <div>
+              <a href="https://github.com/tannerwatmough" target="_blank"><i class="fa-brands fa-github brands"></i></a>
+              <!-- Steam/GitHub/YouTube/App Store Links-->
+              <a href="#" target="_blank"><i class="fa-solid fa-link brands"></i></a>
+            </div>
+            <a href="#"><img src="image/placeholder.jpg"></a>
+            <p>App description</p>
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </div>
+          <div class="card in-progress">
+            <h4>App Title</h4>
+            <p>Type (Tag): Mobile/Web/Desktop/Game</p>
+            <p>Skills Used: technologies</p>
+            <div class="difficulty-slider easy-difficulty"></div>
+            <div>
+              <a href="https://github.com/tannerwatmough" target="_blank"><i class="fa-brands fa-github brands"></i></a>
+              <!-- Steam/GitHub/YouTube/App Store Links-->
+              <a href="#" target="_blank"><i class="fa-solid fa-link brands"></i></a>
+            </div>
+            <a href="#"><img src="image/placeholder.jpg"></a>
+            <p>App description</p>
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
           </div>
         </div>
       </section>
       <section id="experience">
+        <h2>Experience</h2>
+        <div class="card-container">
+          <div class="card">
+            <h3 class="job">Customer Service Representative</h3>
+            <span>September 2017 - January 2020; August 2021 - April 2022</span>
+            <p class="company">City of Spruce Grove</p>
+            <ul>
+              <li>Job point one</li>
+              <li>Job point two</li>
+              <li>Job point three</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="job">Registered Nurse</h3>
+            <span>Februrary 2021 - April 2022</span>
+            <p class="company">City of Spruce Grove</p>
+            <ul>
+              <li>Job point one</li>
+              <li>Job point two</li>
+              <li>Job point three</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="job">Leader-in-Training Coordinator</h3>
+            <span>June 2017 - August 2017</span>
+            <p class="company">City of Spruce Grove</p>
+            <ul>
+              <li>Job point one</li>
+              <li>Job point two</li>
+              <li>Job point three</li>
+            </ul>
+          </div>
+        </div>
       </section>
       <section id="skills">
+        <h2>Skills</h2>
+        <div class="card-container">
+          <div class="card">
+            <h3>Soft Skills</h3>
+            <p><span class="tag">Leadership </span><span class="tag">Teamwork </span><span class="tag">Management </span><span class="tag">Conflict Resolution </span><span class="tag">Collaboration</span></p>
+          </div>
+          <div class="card">
+            <h3>Languages</h3>
+            <p><span class="tag">Java </span><span class="tag">Python </span><span class="tag">JavaScript </span><span class="tag">Lua </span><span class="tag">C# </span><span class="tag">C++ </span><span class="tag">PHP </span><span class="tag">HTML5 </span><span class="tag">CSS3</span></p>
+          </div>
+          <div class="card">
+            <h3>Infrastructure Skills</h3>
+            <p><span class="tag">AWS (AWS Relevant Skills) </span><span class="tag">Azure (Azure Relevant Skills) </span><span class="tag">Terraform </span><span class="tag">GitHub Actions </span></p>
+          </div>
+          <div class="card">
+            <h3>Frameworks</h3>
+            <p><span class="tag">.NET Core </span><span class="tag">.NET Framework </span><span class="tag">Hangfire </span><span class="tag">Apollo </span><span class="tag">GraphQL </span><span class="tag">SlimPHP </span><span class="tag">Angular </span><span class="tag">AngularJS </span><span class="tag">VueJS </span><span class="tag">Unity Engine </span><span class="tag">Unreal Engine </span><span class="tag">NUnit </span><span class="tag">XUnit </span><span class="tag">JUnit </span><span class="tag">PHPUnit </span><span class="tag">Jest </span><span class="tag">React </span><span class="tag">Bootstrap</span></p>
+          </div>
+          <div class="card">
+            <h3>Databases</h3>
+            <p><span class="tag">Azure Cosmos DB </span><span class="tag">AWS Dynamo DB </span><span class="tag">Microsoft SQL Server </span><span class="tag">MySQL </span><span class="tag">SQLite </span><span class="tag">MongoDB</span></p>
+          </div>
+          <div class="card">
+            <h3>Other Technologies</h3>
+            <p><span class="tag">Linux </span><span class="tag">Git </span><span class="tag">Docker </span><span class="tag">SSH Tools (PuTTY, WinSCP) </span><span class="tag">Debuggers </span><span class="tag">Package Managers (NPM, Composer, NuGET) </span><span class="tag">PhotoShop</span></p>
+          </div>
+        </div>
       </section>
     </main>
   </body>

@@ -1,0 +1,264 @@
+/* UTILITIES */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:'Segoe UI', sans-serif;
+    background: rgba(235, 235, 235, 0.9);
+    color: rgba(10, 10, 10, 1);
+    display: flex;
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 10px auto -10px auto;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3, h4, h5, h6 {
+    font-size: 1.5rem;
+}
+
+p, a, span, li {
+    font-size: 1rem;
+}
+
+.blue-title {
+    color: rgba(0, 100, 225, 1);
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active, a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: rgba(50, 50, 155, 1);
+}
+
+.fa-solid, .fa-regular {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: black;
+}
+
+.about-links {
+    font-size: 60px;
+    margin: 10px;
+    color: black;
+}
+
+.brands {
+    font-size: 40px;
+    margin: 10px 0;
+    color: black;
+}
+
+hr {
+    border: 1px solid rgba(0, 0, 0, 1);
+    margin: 155px auto 55px -5%;
+}
+
+hr:first-of-type {
+    margin-top: 50vh;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(45deg, rgba(100, 0, 255, 0.8), rgba(0, 100, 255, 0.8));
+    width: 25vw;
+    height: 100%;
+    padding: 10px;
+    margin: -10px 10px -10px -10px;
+    position: fixed;
+}
+
+header img {
+    width: 75%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 7px solid rgba(150, 175, 195, 0.8);
+    margin: 50% auto 25px auto;
+}
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    font-size: 20px;
+    color: rgba(225, 225, 225, 0.9);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:visited {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.sub-menu {
+    margin-left: 10px;
+}
+
+/* MAIN */
+
+main {
+    margin-left: 30%;
+    width: 75vw;
+}
+
+#about {
+    margin-top: 30vh;
+    margin-bottom: 10vh;
+}
+
+.location {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.block {
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* CARDS */
+
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 1);
+    margin: 20px 20px 20px 0;
+    padding: 20px;
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    width: 70%;
+    min-width: 250px;
+    max-width: 500px;
+    height: 100%;
+}
+
+.card li {
+    margin: 10px;
+}
+
+.card:hover {
+    background-color: rgba(23, 23, 45, 0.95);
+    color: #f0f0f0;
+}
+
+.card:hover i {
+    color: #f0f0f0;
+}
+
+.in-progress:hover {
+    background: repeating-linear-gradient(135deg, rgba(5, 5, 5, 1) 0%, rgba(23, 23, 23, 1) 10%, rgba(165, 116, 0, 0.9) 10%, rgba(116, 95, 0, 1) 20%);
+    font-weight: bold;
+}
+
+.contrast:hover {
+    background-color: rgba(23, 23, 45, 0.95);
+}
+
+.complete:hover {
+    background-color: rgba(23, 100, 23, 0.95);
+}
+
+.complete:hover i {
+    color: #f0f0f0;
+}
+
+.md-margin-vertical {
+    margin: 55px auto;
+}
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        height: 5vh;
+    }
+
+    header img {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+
+    nav li {
+        margin: 10px;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .sub-menu {
+        display: none;
+    }
+
+    main {
+        width: 400px;
+        margin: 10px;
+    }
+
+    .card {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 1650px) {
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        height: auto;
+    }
+
+    .card ul {
+        margin-bottom: 10px;
+    }
+}
