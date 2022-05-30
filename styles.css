@@ -166,6 +166,54 @@ main {
     height: 100%;
 }
 
+.difficulty-slider {
+    content: "";
+    display: flex;
+    width: 100%;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+.easy-difficulty {
+    width: 33%;
+    background-color: green;
+    border-radius: 10px;
+}
+
+.card:hover .easy-difficulty {
+    background-color: rgba(50, 255, 50, 1);
+}
+
+.medium-difficulty {
+    width: 66%;
+    background-color: goldenrod;
+    border-radius: 10px;
+}
+
+.card:hover .medium-difficulty {
+    background-color: rgba(255, 255, 0, 1);
+}
+
+.hard-difficulty {
+    width: 100%;
+    background-color: firebrick;
+    border-radius: 10px;
+}
+
+.card:hover .hard-difficulty {
+    background-color: rgba(255, 50, 50, 1);
+}
+
+.card img {
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    border: 0;
+    margin: 10px 0;
+}
+
 .card li {
     margin: 10px;
 }
@@ -178,14 +226,13 @@ main {
 .card:hover i {
     color: #f0f0f0;
 }
+.card:hover .tag {
+    background-color: #0d0d0d;
+}
 
 .in-progress:hover {
     background: repeating-linear-gradient(135deg, rgba(5, 5, 5, 1) 0%, rgba(23, 23, 23, 1) 10%, rgba(165, 116, 0, 0.9) 10%, rgba(116, 95, 0, 1) 20%);
     font-weight: bold;
-}
-
-.contrast:hover {
-    background-color: rgba(23, 23, 45, 0.95);
 }
 
 .complete:hover {
@@ -198,6 +245,13 @@ main {
 
 .md-margin-vertical {
     margin: 55px auto;
+}
+
+.tag {
+    background-color: #d0d0d0;
+    margin: 10px 5px;
+    padding: 10px;
+    display: inline-block;
 }
 
 @media (max-width: 600px) {
