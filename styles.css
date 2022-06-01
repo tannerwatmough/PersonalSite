@@ -301,6 +301,12 @@ main {
     }
 }
 
+@media (max-width: 350px) {
+    * {
+        max-width: 340px;
+    }
+}
+
 @media (min-width: 1650px) {
     .card-container {
         display: flex;
